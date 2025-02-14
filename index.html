@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的静态首页</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* 导航栏样式 */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* 主体内容样式 */
+        main {
+            padding-top: 80px; /* 确保内容不被固定导航栏遮挡 */
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* 特性部分 */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .feature {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .feature h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">我的网站</div>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#features">特性</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- 英雄区 -->
+    <section class="hero" id="home">
+        <h1>欢迎来到我的网站</h1>
+        <p>这里是简洁、现代且功能强大的平台。</p>
+        <a href="#" class="cta-button">了解更多</a>
+    </section>
+
+    <!-- 特性区 -->
+    <section class="features" id="features">
+        <div class="feature">
+            <h2>特性一</h2>
+            <p>描述特性一的功能和优势。</p>
+        </div>
+        <div class="feature">
+            <h2>特性二</h2>
+            <p>描述特性二的功能和优势。</p>
+        </div>
+        <div class="feature">
+            <h2>特性三</h2>
+            <p>描述特性三的功能和优势。</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 我的公司. 保留所有权利。</p>
+</footer>
+
+</body>
+</html>
